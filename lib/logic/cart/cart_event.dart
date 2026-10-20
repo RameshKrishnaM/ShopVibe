@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 /// Base abstract event for CartBloc
 abstract class CartEvent extends Equatable {

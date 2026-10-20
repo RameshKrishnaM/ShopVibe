@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/core/constants/app_constants.dart';
-import 'package:appcart/core/utils/currency_formatter.dart';
-import 'package:appcart/presentation/widgets/custom_button.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/core/constants/app_constants.dart';
+import 'package:shopvibe/core/utils/currency_formatter.dart';
+import 'package:shopvibe/presentation/widgets/custom_button.dart';
 
 /// Price summary card showing breakdown of subtotal, shipping, and grand total
 class PriceSummaryCard extends StatelessWidget {

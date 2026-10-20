@@ -4,7 +4,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-        android:label="appcart"
+        android:label="ShopVibe"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

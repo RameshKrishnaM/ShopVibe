@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:appcart/data/mock/mock_products.dart';
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/data/mock/mock_products.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 /// Repository interface responsible for loading and querying product catalog
 class ProductRepository {

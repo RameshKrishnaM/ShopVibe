@@ -1,6 +1,6 @@
 {
-    "name": "appcart",
-    "short_name": "appcart",
+    "name": "ShopVibe",
+    "short_name": "ShopVibe",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

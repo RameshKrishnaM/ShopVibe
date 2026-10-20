@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.krish" "\0"
-            VALUE "FileDescription", "appcart" "\0"
+            VALUE "FileDescription", "shopvibe" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "appcart" "\0"
+            VALUE "InternalName", "shopvibe" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.krish. All rights reserved." "\0"
-            VALUE "OriginalFilename", "appcart.exe" "\0"
-            VALUE "ProductName", "appcart" "\0"
+            VALUE "OriginalFilename", "shopvibe.exe" "\0"
+            VALUE "ProductName", "shopvibe" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

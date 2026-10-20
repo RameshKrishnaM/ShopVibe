@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:appcart/core/utils/validators.dart';
-import 'package:appcart/data/models/user_model.dart';
+import 'package:shopvibe/core/utils/validators.dart';
+import 'package:shopvibe/data/models/user_model.dart';
 
 /// Repository interface handling local authentication and session persistence
 class AuthRepository {

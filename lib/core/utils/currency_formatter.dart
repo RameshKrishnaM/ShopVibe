@@ -1,5 +1,5 @@
 import 'package:intl/intl.dart';
-import 'package:appcart/core/constants/app_constants.dart';
+import 'package:shopvibe/core/constants/app_constants.dart';
 
 /// Formatter for Indian Rupee currency and numeric values
 class CurrencyFormatter {

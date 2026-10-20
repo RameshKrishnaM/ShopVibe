@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/core/constants/app_colors.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
 
 /// Reusable primary and outline button with loading indicator support
 class CustomButton extends StatelessWidget {

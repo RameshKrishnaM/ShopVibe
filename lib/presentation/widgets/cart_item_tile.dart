@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/core/utils/currency_formatter.dart';
-import 'package:appcart/data/models/cart_item_model.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/core/utils/currency_formatter.dart';
+import 'package:shopvibe/data/models/cart_item_model.dart';
 
 /// Reusable cart item tile displaying thumbnail, details, quantity stepper, and remove action
 class CartItemTile extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/data/models/cart_item_model.dart';
-import 'package:appcart/logic/cart/cart_event.dart';
-import 'package:appcart/logic/cart/cart_state.dart';
+import 'package:shopvibe/data/models/cart_item_model.dart';
+import 'package:shopvibe/logic/cart/cart_event.dart';
+import 'package:shopvibe/logic/cart/cart_state.dart';
 
 /// Event-driven BLoC managing shopping cart state, line items, and mutations
 class CartBloc extends Bloc<CartEvent, CartState> {

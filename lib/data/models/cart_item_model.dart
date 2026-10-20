@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 /// Model representing an item in the shopping cart with its quantity
 class CartItemModel extends Equatable {

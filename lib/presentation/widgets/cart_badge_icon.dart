@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/logic/cart/cart_bloc.dart';
-import 'package:appcart/logic/cart/cart_state.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/logic/cart/cart_bloc.dart';
+import 'package:shopvibe/logic/cart/cart_state.dart';
 
 /// App bar cart icon with dynamic live badge counter
 class CartBadgeIcon extends StatelessWidget {

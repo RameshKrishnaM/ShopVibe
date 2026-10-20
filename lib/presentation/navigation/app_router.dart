@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/data/models/product_model.dart';
-import 'package:appcart/presentation/screens/auth/login_screen.dart';
-import 'package:appcart/presentation/screens/cart/cart_screen.dart';
-import 'package:appcart/presentation/screens/products/product_detail_screen.dart';
-import 'package:appcart/presentation/screens/products/product_listing_screen.dart';
+import 'package:shopvibe/data/models/product_model.dart';
+import 'package:shopvibe/presentation/screens/auth/login_screen.dart';
+import 'package:shopvibe/presentation/screens/cart/cart_screen.dart';
+import 'package:shopvibe/presentation/screens/products/product_detail_screen.dart';
+import 'package:shopvibe/presentation/screens/products/product_listing_screen.dart';
 
 /// Centralized route manager for named routing
 class AppRouter {
@@ -14,6 +14,7 @@ class AppRouter {
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case '/':
       case login:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),

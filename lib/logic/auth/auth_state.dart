@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:appcart/data/models/user_model.dart';
+import 'package:shopvibe/data/models/user_model.dart';
 
 /// Base state for application authentication
 abstract class AuthState extends Equatable {

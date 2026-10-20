@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:appcart/data/models/cart_item_model.dart';
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/data/models/cart_item_model.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 enum CartActionStatus { initial, itemAdded, itemRemoved, quantityUpdated, cleared }
 

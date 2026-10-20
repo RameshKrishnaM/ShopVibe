@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/data/models/product_model.dart';
-import 'package:appcart/data/repositories/product_repository.dart';
-import 'package:appcart/logic/products/product_state.dart';
+import 'package:shopvibe/data/models/product_model.dart';
+import 'package:shopvibe/data/repositories/product_repository.dart';
+import 'package:shopvibe/logic/products/product_state.dart';
 
 /// Cubit managing product fetching, category filtering, and instant search
 class ProductCubit extends Cubit<ProductState> {

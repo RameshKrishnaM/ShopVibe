@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/core/utils/currency_formatter.dart';
-import 'package:appcart/data/models/product_model.dart';
-import 'package:appcart/logic/cart/cart_bloc.dart';
-import 'package:appcart/logic/cart/cart_event.dart';
-import 'package:appcart/logic/cart/cart_state.dart';
-import 'package:appcart/presentation/navigation/app_router.dart';
-import 'package:appcart/presentation/widgets/cart_badge_icon.dart';
-import 'package:appcart/presentation/widgets/custom_button.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/core/utils/currency_formatter.dart';
+import 'package:shopvibe/data/models/product_model.dart';
+import 'package:shopvibe/logic/cart/cart_bloc.dart';
+import 'package:shopvibe/logic/cart/cart_event.dart';
+import 'package:shopvibe/logic/cart/cart_state.dart';
+import 'package:shopvibe/presentation/navigation/app_router.dart';
+import 'package:shopvibe/presentation/widgets/cart_badge_icon.dart';
+import 'package:shopvibe/presentation/widgets/custom_button.dart';
 
 /// Screen displaying comprehensive details for a selected product
 class ProductDetailScreen extends StatelessWidget {

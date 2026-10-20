@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/constants/app_constants.dart';
-import 'package:appcart/core/utils/validators.dart';
-import 'package:appcart/logic/auth/login_form_state.dart';
+import 'package:shopvibe/core/constants/app_constants.dart';
+import 'package:shopvibe/core/utils/validators.dart';
+import 'package:shopvibe/logic/auth/login_form_state.dart';
 
 /// Cubit managing input form validation, reactive error tracking, and password visibility
 class LoginFormCubit extends Cubit<LoginFormState> {

@@ -166,7 +166,7 @@ No issues found! (ran in 4.1s)
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd appcart
+   cd shopvibe
    ```
 
 2. Fetch dependencies:

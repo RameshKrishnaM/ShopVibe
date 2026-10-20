@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Modern, cohesive color palette for the AppCart application
+/// Modern, cohesive color palette for the ShopVibe application
 class AppColors {
   // Primary & Accent Brand Colors
   static const Color primary = Color(0xFF4F46E5); // Indigo 600

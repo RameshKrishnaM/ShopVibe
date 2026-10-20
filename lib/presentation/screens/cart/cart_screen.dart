@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/core/utils/currency_formatter.dart';
-import 'package:appcart/data/models/cart_item_model.dart';
-import 'package:appcart/logic/cart/cart_bloc.dart';
-import 'package:appcart/logic/cart/cart_event.dart';
-import 'package:appcart/logic/cart/cart_state.dart';
-import 'package:appcart/presentation/widgets/cart_item_tile.dart';
-import 'package:appcart/presentation/widgets/empty_state_view.dart';
-import 'package:appcart/presentation/widgets/price_summary_card.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/core/utils/currency_formatter.dart';
+import 'package:shopvibe/data/models/cart_item_model.dart';
+import 'package:shopvibe/logic/cart/cart_bloc.dart';
+import 'package:shopvibe/logic/cart/cart_event.dart';
+import 'package:shopvibe/logic/cart/cart_state.dart';
+import 'package:shopvibe/presentation/widgets/cart_item_tile.dart';
+import 'package:shopvibe/presentation/widgets/empty_state_view.dart';
+import 'package:shopvibe/presentation/widgets/price_summary_card.dart';
 
 /// Screen 3: Cart Screen complying with all assessment requirements
 class CartScreen extends StatelessWidget {

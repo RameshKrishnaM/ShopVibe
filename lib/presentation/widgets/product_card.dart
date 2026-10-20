@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/core/utils/currency_formatter.dart';
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/core/utils/currency_formatter.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 /// Reusable product card widget displaying product details, interactive quantity stepper, and tap callback
 class ProductCard extends StatelessWidget {

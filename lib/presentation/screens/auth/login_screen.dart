@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/core/constants/app_constants.dart';
-import 'package:appcart/logic/auth/auth_cubit.dart';
-import 'package:appcart/logic/auth/auth_state.dart';
-import 'package:appcart/logic/auth/login_form_cubit.dart';
-import 'package:appcart/logic/auth/login_form_state.dart';
-import 'package:appcart/presentation/navigation/app_router.dart';
-import 'package:appcart/presentation/widgets/custom_button.dart';
-import 'package:appcart/presentation/widgets/custom_text_field.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/core/constants/app_constants.dart';
+import 'package:shopvibe/logic/auth/auth_cubit.dart';
+import 'package:shopvibe/logic/auth/auth_state.dart';
+import 'package:shopvibe/logic/auth/login_form_cubit.dart';
+import 'package:shopvibe/logic/auth/login_form_state.dart';
+import 'package:shopvibe/presentation/navigation/app_router.dart';
+import 'package:shopvibe/presentation/widgets/custom_button.dart';
+import 'package:shopvibe/presentation/widgets/custom_text_field.dart';
 
 /// Screen 1: Login Screen adhering to all assessment requirements
 class LoginScreen extends StatefulWidget {
@@ -62,7 +62,11 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             );
           } else if (authState is AuthAuthenticated) {
-            Navigator.pushReplacementNamed(context, AppRouter.products);
+            Navigator.pushNamedAndRemoveUntil(
+              context,
+              AppRouter.products,
+              (route) => false,
+            );
           }
         },
         builder: (context, authState) {

@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/data/models/user_model.dart';
-import 'package:appcart/data/repositories/auth_repository.dart';
-import 'package:appcart/logic/auth/auth_state.dart';
+import 'package:shopvibe/data/models/user_model.dart';
+import 'package:shopvibe/data/repositories/auth_repository.dart';
+import 'package:shopvibe/logic/auth/auth_state.dart';
 
 /// Cubit managing high-level authentication lifecycle
 class AuthCubit extends Cubit<AuthState> {

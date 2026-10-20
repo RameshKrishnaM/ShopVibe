@@ -1,4 +1,4 @@
-package com.krish.appcart
+package com.krish.shopvibe
 
 import io.flutter.embedding.android.FlutterActivity
 

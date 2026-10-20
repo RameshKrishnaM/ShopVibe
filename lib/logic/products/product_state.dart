@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 /// State representation for product catalog, category filters, and search
 abstract class ProductState extends Equatable {

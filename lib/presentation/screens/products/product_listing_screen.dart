@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/data/models/product_model.dart';
-import 'package:appcart/logic/auth/auth_cubit.dart';
-import 'package:appcart/logic/auth/auth_state.dart';
-import 'package:appcart/logic/cart/cart_bloc.dart';
-import 'package:appcart/logic/cart/cart_event.dart';
-import 'package:appcart/logic/cart/cart_state.dart';
-import 'package:appcart/logic/products/product_cubit.dart';
-import 'package:appcart/logic/products/product_state.dart';
-import 'package:appcart/presentation/navigation/app_router.dart';
-import 'package:appcart/presentation/widgets/cart_badge_icon.dart';
-import 'package:appcart/presentation/widgets/empty_state_view.dart';
-import 'package:appcart/presentation/widgets/product_card.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/data/models/product_model.dart';
+import 'package:shopvibe/logic/auth/auth_cubit.dart';
+import 'package:shopvibe/logic/auth/auth_state.dart';
+import 'package:shopvibe/logic/cart/cart_bloc.dart';
+import 'package:shopvibe/logic/cart/cart_event.dart';
+import 'package:shopvibe/logic/cart/cart_state.dart';
+import 'package:shopvibe/logic/products/product_cubit.dart';
+import 'package:shopvibe/logic/products/product_state.dart';
+import 'package:shopvibe/presentation/navigation/app_router.dart';
+import 'package:shopvibe/presentation/widgets/cart_badge_icon.dart';
+import 'package:shopvibe/presentation/widgets/empty_state_view.dart';
+import 'package:shopvibe/presentation/widgets/product_card.dart';
 
 /// Screen 2: Product Listing Screen with search, category filtering, and live cart integration
 class ProductListingScreen extends StatefulWidget {
@@ -103,7 +103,11 @@ class _ProductListingScreenState extends State<ProductListingScreen> {
             onPressed: () {
               Navigator.pop(dialogCtx);
               context.read<AuthCubit>().logout();
-              Navigator.pushReplacementNamed(context, AppRouter.login);
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                AppRouter.login,
+                (route) => false,
+              );
             },
             child: const Text('Sign Out'),
           ),
@@ -114,10 +118,13 @@ class _ProductListingScreenState extends State<ProductListingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      appBar: AppBar(
-        title: BlocBuilder<AuthCubit, AuthState>(
+    return PopScope(
+      canPop: false,
+      child: Scaffold(
+        backgroundColor: AppColors.background,
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          title: BlocBuilder<AuthCubit, AuthState>(
           builder: (context, authState) {
             final userName = authState is AuthAuthenticated
                 ? authState.user.displayName
@@ -420,6 +427,7 @@ class _ProductListingScreenState extends State<ProductListingScreen> {
 
           return const SizedBox.shrink();
         },
+      ),
       ),
     );
   }

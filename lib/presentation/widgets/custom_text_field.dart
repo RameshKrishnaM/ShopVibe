@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/core/constants/app_colors.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
 
 /// Reusable input field with label, icon prefixes/suffixes, and error hints
 class CustomTextField extends StatelessWidget {

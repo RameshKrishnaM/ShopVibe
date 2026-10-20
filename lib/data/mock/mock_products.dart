@@ -1,4 +1,4 @@
-import 'package:appcart/data/models/product_model.dart';
+import 'package:shopvibe/data/models/product_model.dart';
 
 /// Static / local mock product catalog for e-commerce clothing assessment
 class MockProducts {

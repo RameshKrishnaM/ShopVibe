@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:appcart/core/constants/app_colors.dart';
-import 'package:appcart/presentation/widgets/custom_button.dart';
+import 'package:shopvibe/core/constants/app_colors.dart';
+import 'package:shopvibe/presentation/widgets/custom_button.dart';
 
 /// Reusable empty state view with illustration, title, subtitle, and action
 class EmptyStateView extends StatelessWidget {

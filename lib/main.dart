@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:appcart/core/theme/app_theme.dart';
-import 'package:appcart/data/models/user_model.dart';
-import 'package:appcart/data/repositories/auth_repository.dart';
-import 'package:appcart/data/repositories/product_repository.dart';
-import 'package:appcart/logic/auth/auth_cubit.dart';
-import 'package:appcart/logic/cart/cart_bloc.dart';
-import 'package:appcart/logic/products/product_cubit.dart';
-import 'package:appcart/presentation/navigation/app_router.dart';
+import 'package:shopvibe/core/theme/app_theme.dart';
+import 'package:shopvibe/data/models/user_model.dart';
+import 'package:shopvibe/data/repositories/auth_repository.dart';
+import 'package:shopvibe/data/repositories/product_repository.dart';
+import 'package:shopvibe/logic/auth/auth_cubit.dart';
+import 'package:shopvibe/logic/cart/cart_bloc.dart';
+import 'package:shopvibe/logic/products/product_cubit.dart';
+import 'package:shopvibe/presentation/navigation/app_router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +20,7 @@ void main() async {
   final initialUser = await authRepository.getSavedUser();
 
   runApp(
-    AppCartApp(
+    ShopVibeApp(
       authRepository: authRepository,
       productRepository: productRepository,
       initialUser: initialUser,
@@ -29,12 +29,12 @@ void main() async {
 }
 
 /// Root Application Widget with injected repositories and global BLoC/Cubit providers
-class AppCartApp extends StatelessWidget {
+class ShopVibeApp extends StatelessWidget {
   final AuthRepository authRepository;
   final ProductRepository productRepository;
   final UserModel? initialUser;
 
-  const AppCartApp({
+  const ShopVibeApp({
     super.key,
     required this.authRepository,
     required this.productRepository,
@@ -71,6 +71,11 @@ class AppCartApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: AppTheme.lightTheme,
           initialRoute: initialUser != null ? AppRouter.products : AppRouter.login,
+          onGenerateInitialRoutes: (initialRoute) => [
+            AppRouter.onGenerateRoute(
+              RouteSettings(name: initialRoute),
+            ),
+          ],
           onGenerateRoute: AppRouter.onGenerateRoute,
         ),
       ),
